@@ -6,7 +6,7 @@
             "version": "latest"
         }
     },
-    "postStartCommand": "python3 /workspaces/soul2/g.py",
+    "postStartCommand": "soul2=$(basename $(git rev-parse --show-toplevel)); python3 /workspaces/$soul2/soul.py",
     "customizations": {
         "vscode": {
             "settings": {
@@ -18,4 +18,3 @@
         }
     }
 }
-
